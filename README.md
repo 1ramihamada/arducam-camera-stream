@@ -1,8 +1,7 @@
 # Raspberry Pi 4 Model B - Camera Streaming Setup
 This guide walks you through setting up **camera-streamer** on a **Raspberry Pi 4 Model B** with **libcamera** support, **RTSP streaming**, and **firewall configurations**. 
 
-**GitHub Source for camera-streamer:**  
-[ayufan/camera-streamer](https://github.com/ayufan/camera-streamer/tree/main)
+**GitHub Source for camera-streamer:** [ayufan/camera-streamer](https://github.com/ayufan/camera-streamer/tree/main)
 ---
 
 ## **System Requirements**
@@ -111,10 +110,10 @@ camera-streamer \
 ```
 
 If it starts successfully, you can access:
-- Web UI: http://<RPI-IP>:8080/
-- RTSP Stream: rtsp://<RPI-IP>:8554/h264
+- Web UI: http://RPI-IP:8080/
+- RTSP Stream: rtsp://RPI-IP:8554/h264
   
-Replace <RPI-IP> with your Raspberry Pi's local IP (e.g., 192.168.1.100).
+Replace RPI-IP with your Raspberry Pi's local IP (e.g., 192.168.1.100).
 
 Error messages can be read:
 ```bash
