@@ -94,7 +94,7 @@ sudo ufw enable
 sudo ufw reload
 ```
 
-### **6️⃣ Start Camera-Streamer Manually**
+### **5️⃣ Start Camera-Streamer Manually**
 ```bash
 camera-streamer \
   --camera-path=/base/soc/i2c0mux/i2c@1/ov5647@36 \
@@ -108,12 +108,12 @@ camera-streamer \
   --http-port=8080 \
   --rtsp-port=8554
 ```
+### **6️⃣ Viewing the Stream**
 
 If it starts successfully, you can access:
-- Web UI: http://RPI-IP:8080/
-- RTSP Stream: rtsp://RPI-IP:8554/h264
-  
-Replace RPI-IP with your Raspberry Pi's local IP (e.g., 192.168.1.100).
+- http://(RPI-IP):8080/
+- Replace (RPI-IP) with either your Raspberry Pi's local or Tailscale IP (e.g., 192.168.1.100).
+*if using the Rapsberry Pi's local IP then the viewing device has to be connected to the same network as the pi*
 
 Error messages can be read:
 ```bash
