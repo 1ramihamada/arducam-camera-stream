@@ -1,5 +1,5 @@
-# Raspberry Pi 4 Model B - Camera Streaming Setup
-This guide walks you through setting up **camera-streamer** on a **Raspberry Pi 4 Model B** with **libcamera** support, **RTSP streaming**, and **firewall configurations**. 
+# Raspberry Pi - Camera Streaming Setup
+This guide walks you through setting up **camera-streamer** on a **Raspberry Pi 4 Model B** with **libcamera** support.
 
 **GitHub Source for camera-streamer:** [ayufan/camera-streamer](https://github.com/ayufan/camera-streamer/tree/main)
 ---
