@@ -113,7 +113,8 @@ camera-streamer \
 If it starts successfully, you can access:
 - http://(RPI-IP):8080/
 - Replace (RPI-IP) with either your Raspberry Pi's local or Tailscale IP (e.g., 192.168.1.100).
-*if using the Rapsberry Pi's local IP then the viewing device has to be connected to the same network as the pi*
+- If using the **local IP**, your viewing device must be on the same Wi-Fi or Ethernet network as the Pi.
+- If using **Tailscale**, you can access the stream from anywhere without being on the same network.
 
 Error messages can be read:
 ```bash
