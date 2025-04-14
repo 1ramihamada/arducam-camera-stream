@@ -94,7 +94,9 @@ sudo ufw enable
 sudo ufw reload
 ```
 
-### **5️⃣ Start Camera-Streamer Manually**
+### **5️⃣ Start Camera-Streamer (Arducam/ USB)**
+
+## Arducam 5MP OV5647:
 ```bash
 camera-streamer \
   --camera-path=/base/soc/i2c0mux/i2c@1/ov5647@36 \
@@ -108,6 +110,32 @@ camera-streamer \
   --http-port=8080 \
   --rtsp-port=8554
 ```
+
+## USB:
+
+Run: 
+```bash
+v4l2-ctl --list-devices
+```
+You'll see something like: 
+```bash
+Logitech USB Webcam (usb-0000:01:00.0-1):
+	/dev/video0
+```
+```bash
+camera-streamer \
+  --camera-path=/dev/video0 \
+  --camera-type=v4l2 \
+  --camera-width=1280 \
+  --camera-height=720 \
+  --camera-fps=30 \
+  --camera-video.disabled=0 \
+  --camera-video.height=720 \
+  --http-listen=0.0.0.0 \
+  --http-port=8080 \
+  --rtsp-port=8554
+```
+
 ### **6️⃣ Viewing the Stream**
 
 If it starts successfully, you can access:
